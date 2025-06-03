@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Aspiring Data Analyst</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hi, I'm a dedicated tech professional with a strong background in Oracle Database Administration. I've successfully transitioned into data analysis, where I leverage tools like Excel, Power BI, and Python for data cleaning, analysis, and visualization.
+                    My expertise includes managing robust database systems, data modeling, and creating insightful visualizations. I'm passionate about uncovering meaningful insights through data and continuously expanding my skill set to stay aligned with the evolving data landscape.
+                    I'm committed to delivering data-driven solutions and am always eager to take on new challenges that help me grow professionally.</p>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skill-tags">
+                    <span>SQL</span>
+                    <span>PL/SQL</span>
+                    <span>Python</span>
+                    <span>Power BI</span>
+                    <span>Excel</span>
+                    <span>Oracle Database</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-content">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Tata Consultancy Services</h3>
+                    <p class="role">System Engineer</p>
+                    <p class="project">Project - Delta Airlines</p>
+                </div>
+                <div class="experience-meta">
+                    <p class="duration">May 2023 - Present</p>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li>Managed single-node and multi-node RAC databases across Oracle 11g, 12c, and 19c environments</li>
+                        <li>Automated database patching processes to ensure minimal downtime and high availability</li>
+                        <li>Developed and maintained automated jobs and health check scripts using Shell scripting</li>
+                        <li>Created user-specific automation solutions for database tasks and reporting</li>
+                        <li>Hands-on experience with Oracle Exadata systems</li>
+                        <li>Demonstrated ability to safely clean up unwanted datafiles from ASM without database downtime</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Computer Age Management Services</h3>
+                    <p class="role">Junior Database Administrator</p>
+                </div>
+                <div class="experience-meta">
+                    <p class="duration">Jun 2021 - Apr 2023</p>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li>Managed Oracle 12c and 19c databases with hands-on experience</li>
+                        <li>Proficient in database installation and ASM configuration</li>
+                        <li>Conducted daily health checks and monitored database performance</li>
+                        <li>Expert in Data Pump utilities for import/export operations</li>
+                        <li>Configured and monitored Data Guard for high availability</li>
+                        <li>Created and managed database links and reviewed alert logs</li>
+                        <li>Provided training support for newly joined team members</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <h2>Certifications & Achievements</h2>
+        <div class="certifications-content">
+            <button class="cert-nav prev" onclick="scrollCertifications('prev')">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="cert-nav next" onclick="scrollCertifications('next')">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="certification-container">
+                <div class="certification-item">
+                    <div class="cert-image">
+                        <a href="images/PL300 Power BI Analyst.jpg" class="lightbox-trigger">
+                            <img src="images/PL300 Power BI Analyst.jpg" alt="Power BI Data Analyst Certification" onerror="this.src='https://via.placeholder.com/200x150?text=Add+Power+BI+Cert'">
+                            <div class="image-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cert-details">
+                        <h3>PL-300 Power BI Data Analyst</h3>
+                        <p class="cert-issuer">O'Reilly by Pack Publishing</p>
+                        <p class="cert-date">Completed</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-image">
+                        <a href="images/SQL_Certification.png" class="lightbox-trigger">
+                            <img src="images/SQL_Certification.png" alt="SQL Programming Language Certification" onerror="this.src='https://via.placeholder.com/200x150?text=Add+SQL+Cert'">
+                            <div class="image-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cert-details">
+                        <h3>SQL Programming Language</h3>
+                        <p class="cert-issuer">LinkedIn Certifications</p>
+                        <p class="cert-date">Earned</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Top 3rd Place in Issue Resolution</h3>
+                        <p class="cert-issuer">Tata Consultancy Services</p>
+                        <p class="cert-date">2024</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-image">
+                        <a href="images/CAMSPAY_cloud_migration.jpg" class="lightbox-trigger">
+                            <img src="images/CAMSPAY_cloud_migration.jpg" alt="CAMS Cloud Migration" onerror="this.src='https://via.placeholder.com/200x150?text=Add+CAMS+Cert'">
+                            <div class="image-overlay">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cert-details">
+                        <h3>CAMSPay Cloud Migration</h3>
+                        <p class="cert-issuer">Computer Age Management Services</p>
+                        <p class="cert-date">March 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Featured Project</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/icons8-project-management-100.png" alt="Sales Analysis Dashboard" style="width: 100%; height: 300px; object-fit: cover;">
+                <div class="project-content">
+                    <h3>Sales Analysis Dashboard</h3>
+                    <div class="project-tags">
+                        <span>Power BI</span>
+                        <span>Excel</span>
+                        <span>DAX</span>
+                        <span>Power Query</span>
+                    </div>
+                    <p><strong>Overview:</strong> Developed an interactive sales performance dashboard to analyze regional sales trends using Power BI.</p>
+                    <div class="project-details">
+                        <div class="project-feature">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Visualized sales trends across different regions</p>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-database"></i>
+                            <p>Implemented Power Query for ETL operations</p>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-calculator"></i>
+                            <p>Used DAX for advanced statistical calculations</p>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-wrench"></i>
+                            <p>Added slicers, drill-throughs, and bookmarks</p>
+                        </div>
+                    </div>
+                    <div class="project-outcomes">
+                        <h4>Key Outcomes:</h4>
+                        <ul>
+                            <li>Enhanced data-driven decision making</li>
+                            <li>Improved sales trend analysis</li>
+                            <li>Streamlined data processing</li>
+                            <li>Created interactive visualizations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-spacing"></div>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-links">
+                <a href="https://github.com/KODIDELARAHIMAN" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/kodidela-rahiman-1231b1195/" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:rahimankodidela@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
